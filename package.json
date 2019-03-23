@@ -1,13 +1,13 @@
 {
-  "name": "crud",
+  "name": "{{name}}",
   "version": "1.0.0",
-  "description": "",
+  "description": "{{description}}",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node start.js"
   },
-  "author": "",
+  "author": "{{author}}",
   "license": "ISC",
   "dependencies": {
     "form-data": "^2.3.3",
