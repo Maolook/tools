@@ -1,0 +1,9 @@
+{
+  "development":{
+      "username": "ssxf",
+      "password": "didi123",
+      "database": "jinghangmnp_checkin_test",
+      "host": "140.143.227.95",
+      "dialect": "mysql"
+  }
+}

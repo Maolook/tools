@@ -1,0 +1,163 @@
+swagger: "2.0"
+info:
+  description: ""
+  version: "1.0.0"
+  title: "Swagger"
+  termsOfService: "http://swagger.io/terms/"
+  contact:
+    email: ""
+  license:
+    name: "Apache 2.0"
+    url: "http://www.apache.org/licenses/LICENSE-2.0.html"
+
+
+#### ------- route config region --------
+host: "localhost:5666"
+basePath: "/"
+#### endregion
+
+schemes:
+- "http"
+
+
+#### ------- tags region -----------------
+tags:
+
+- name: "Test"
+  description: "测试CRUD功能用"
+
+
+
+paths:
+  /createInfo:
+    post:
+      tags:
+      - "Test"
+      summary: "创建角色"
+      description: "创建角色"
+      operationId: "createInfo"
+      consumes:
+      - "multipart/form-data"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "name"
+        in: "formData"
+        description: "姓名"
+        required: true
+        type: "string"
+      - name: "age"
+        in: "formData"
+        description: "年龄"
+        required: true
+        type: "integer"
+      - name: "sex"
+        in: "formData"
+        description: "性别"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "object"
+      x-swagger-router-controller: "Test"
+
+  /queryInfo:
+    post:
+      tags:
+      - "Test"
+      summary: "查询信息"
+      description: "查询信息"
+      operationId: "queryInfo"
+      consumes:
+      - "multipart/form-data"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "name"
+        in: "formData"
+        description: "姓名"
+        required: false
+        type: "string"
+      - name: "age"
+        in: "formData"
+        description: "年龄"
+        required: false
+        type: "integer"
+      - name: "sex"
+        in: "formData"
+        description: "性别"
+        required: false
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "object"
+      x-swagger-router-controller: "Test"
+
+  /updateInfo:
+    post:
+      tags:
+      - "Test"
+      summary: "更新角色"
+      description: "更新角色"
+      operationId: "updateInfo"
+      consumes:
+      - "multipart/form-data"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "heroId"
+        in: "formData"
+        description: "角色ID"
+        required: true
+        type: "string"
+      - name: "name"
+        in: "formData"
+        description: "姓名"
+        required: false
+        type: "string"
+      - name: "age"
+        in: "formData"
+        description: "年龄"
+        required: false
+        type: "integer"
+      - name: "sex"
+        in: "formData"
+        description: "性别"
+        required: false
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "object"
+      x-swagger-router-controller: "Test"
+
+  /delectInfo:
+    post:
+      tags:
+      - "Test"
+      summary: "删除角色"
+      description: "删除角色"
+      operationId: "delectInfo"
+      consumes:
+      - "multipart/form-data"
+      produces:
+      - "application/json"
+      parameters:
+      - name: "heroId"
+        in: "formData"
+        description: "角色ID"
+        required: true
+        type: "string"
+      responses:
+        200:
+          description: "successful operation"
+          schema:
+            type: "object"
+      x-swagger-router-controller: "Test"
+
+

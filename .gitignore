@@ -1,0 +1,15 @@
+node_modules/
+yarn.lock
+/.vscode/
+api/swagger.json
+userFiles/
+codeFiles/
+*.wav
+*.mp3
+*.png
+package-lock.json
+*.html
+logs/
+*.log
+*.mp4
+*.zip

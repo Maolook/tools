@@ -1,0 +1,36 @@
+{
+  "name": "crud",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node start.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "form-data": "^2.3.3",
+    "handlebars": "^4.1.1",
+    "js-yaml": "^3.13.0",
+    "koa": "^2.7.0",
+    "koa-bodyparser": "^4.2.1",
+    "koa-multer": "^1.0.2",
+    "koa-router": "^7.4.0",
+    "koa2-cors": "^2.0.6",
+    "koa2-swagger-ui": "^2.13.1",
+    "lodash.defaultsdeep": "^4.6.0",
+    "mysql2": "^1.6.5",
+    "swagger-tools": "^0.10.4"
+  },
+  "devDependencies": {
+    "babel-core": "^6.26.0",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-es2017": "^6.24.1",
+    "babel-preset-latest-node": "^0.4.0",
+    "fs": "^0.0.1-security",
+    "koa-body": "^2.5.0",
+    "sequelize": "^4.31.2",
+    "swagger-ui-dist": "3.12.0"
+  }
+}
